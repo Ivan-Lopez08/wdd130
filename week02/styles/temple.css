@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header p {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+main{
+    max-width: 300px;
+    margin: 0 auto;      
+    text-align: center; 
+    font-family: Arial;
+}
+
+h1 {
+    padding: 15px;
+    font-size: 26px;
+}
+
+img {
+    max-width: 100%;
+    box-shadow: 0 0 30px black;
+}
+
+section {
+    max-width: 100%;
+    background-color: lightgrey;
+    padding: 15px;
+    margin: 20px auto;
+    text-align: left;
+    font-size: .8rem;
+}
+
+section h2 {
+    border-bottom: 1px dotted black;
+}
+
+section p {
+    padding: 3px 10px;
+
+}
+
+ul {
+    padding: 3px 20px;
+
+}
+
+footer p {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
