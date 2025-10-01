@@ -1,6 +1,6 @@
 :root {
     --body-font: 'Poppins', sans-serif;
-    --accent1-color: #003366;
+    --accent1-color: black;
     --heading-font: 'Oswald', sans-serif;
     --primary-color: #FF6600;
 }
@@ -21,10 +21,57 @@ header, main, footer {
     margin: 0 auto;
 }
 
+img{
+    height: auto;
+    display: block;
+}
+
+/*    Header styles    */
+header{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    background-color: #85B8CB;
+    margin-bottom: 1rem;
+}
+
+nav {
+  grid-column: 2; 
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
 h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
-    background-color: #228B22;
+    background-color: #1D6A96;
     padding: 16px;
     text-align: center;
 }
@@ -35,19 +82,17 @@ h1 {
     width: 100%;
     padding: 16px;
     text-align: center;
-    opacity: 0.7;
-    background-color: #228B22;
+    opacity: 0.8;
 }
 
 article {
     position: absolute;
     bottom: 30px;
-    background-color: #228B22;
+    background-color: #1D6A96;
 }
 
-article img {
+article img { 
     width: 125px !important;
-    height: auto;
     float: right;
     margin: 10px;
     box-shadow: 0 0 5px black;
@@ -58,9 +103,31 @@ nav, p, section, article {
     padding: 8px;
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.footer-text {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+
+.socialmedia {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  gap: 0.6rem;
+}
+
+
 footer img {
     width: 40px;
-    height: auto;
+    margin-right: .6rem;
 }
 
 /* Class selection */
@@ -76,5 +143,41 @@ footer img {
 .hero img {
     display: block;
     width: 100%;
-    height: auto;
+}
+
+.history {
+    display: grid;
+    grid-template-columns: 3fr 1fr 3fr;
+    grid-template-rows: 1fr 3fr;
+    position: relative;
+}
+
+.history h2{
+    justify-content: center;
+    grid-column: span 3;
+}
+
+.history img{
+    width: 250px;
+    float: center;
+    margin: 1rem;
+}
+
+.adventure{
+    display: grid;
+    grid-template-rows: 1fr 3fr;;
+}
+
+.adventure ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.adventure img {
+    width: 135px;
+}
+
+.adventure li{
+    display: flex;
+    flex-flow: column;
 }
